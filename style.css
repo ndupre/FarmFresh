@@ -15,6 +15,17 @@
         font-weight: 600;
         font-size: 30px;
     }
+    
+    h3{
+        font-family: 'Signika', sans-serif;
+        font-size:20px;
+        font-weight: 200;
+    }
+
+    p{
+        font-family:'mulish';
+        font-weight: 300;
+    }
 
     /* Feature */
     body{
@@ -26,13 +37,14 @@
 
     .container{
         padding: 0%;
-        margin: 0%;
+        margin: 0% 0% 10% 0%;
+        
     }
 
     .feature{
         display:block;
         height: 100vh ;
-        padding:5%;
+        padding:5% 5% 0% 5%;
         border-bottom-left-radius: 300px;
         border-bottom-right-radius: 300px;
         background-color: #41CF8B;
@@ -72,6 +84,7 @@
     .feature-product{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     h1.title-feature{
@@ -209,12 +222,135 @@
         border-radius: 5px;
     }
 
+    .feature .season{
+        position:relative;
+        width:100%;
+        margin: 0px;
+        padding:0px;
+    }
+
     /* end pagination */
 
-    /* start list */
-    .product-list{
-        padding:5px;
+    .filter{
+        display: block;
+        margin-bottom:0px ;
+        padding-bottom: 0px;
     }
+
+    .filter .section-title{
+        padding:5%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    .filter .category{
+        display:flex;
+        justify-content: space-evenly;
+        margin-bottom:0px ;
+        padding-bottom: 0px;
+    }
+    
+    .filter .category a{
+        font-family: 'mulish';
+        font-size: 12px;
+        color: #212529;
+        margin-bottom: 10px;
+
+    }
+
+    .filter .category .fruit{
+        display: block;
+        background-color: #FFF5D1;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+
+    .filter .category .fruit img{
+        margin-top:20px;
+
+    }
+
+    
+
+    .filter .category .veggie{
+        display: block;
+        background-color: #ffffff;
+        border-top-left-radius: 80px;
+        border-top-right-radius: 80px;
+    }
+
+    .filter .category .veggie img{
+        margin-top:20px;
+
+    }
+
+    .filter .category .farm{
+        flex-direction: column;
+        background-color: #ffffff;
+        border-top-left-radius: 80px;
+        border-top-right-radius:80px;
+    }
+
+    .filter .category .farm img{
+        margin-top:20px;
+
+        }
+    }
+
+
+
+
+
+    /* start list */
+
+   .product-list{
+       background-color:#FFF5D1;
+       padding:5%;
+       margin-top: 0%;
+       border-bottom-left-radius: 60px;
+       border-bottom-right-radius: 60px;
+   }
+
+   .row{
+    display: flex;
+    justify-content: space-between;
+    
+    padding-bottom: 15px;
+   }
+
+   .row .col{
+   display:block;
+   text-align: center;
+   }
+
+
+
+   .row .col .product{
+        font-family: 'Signika', sans-serif;
+        font-size: 16px;
+        font-weight:400;
+        text-decoration: none;
+        color:#212529;
+        line-height: 1em;
+   }
+
+   .row .col img{
+       margin-bottom: 10px;
+
+   }
+
+   .col a.product:hover{
+       color:#FB4416;
+   }
+
+   .col p{
+       font-size: 'mulish';
+       font-size: 14px;
+       font-weight: 400;
+       color: #212529;
+   }
     /* end list */
 
 
